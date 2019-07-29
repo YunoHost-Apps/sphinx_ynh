@@ -93,9 +93,10 @@ ynh_setup_source "$final_path"
 # INSTALL SPHINX
 #=================================================
 
-pushd $final_path
+pushd $final_path || exit
+update-alternatives --install /usr/bin/python python /usr/bin/python3.5 2
 pip install .
-popd
+popd || exit
 
 #=================================================
 # NGINX CONFIGURATION
