@@ -66,6 +66,12 @@ ynh_app_setting_set $app domain $domain
 ynh_app_setting_set $app path $path_url
 ynh_app_setting_set $app is_public $is_public
 
+#==============================================
+# INSTALL DEPS
+#==============================================
+
+ynh_install_app_dependencies python3-pip
+
 #=================================================
 # FIND AND OPEN A PORT
 #=================================================
@@ -94,8 +100,7 @@ ynh_setup_source "$final_path"
 #=================================================
 
 pushd $final_path || exit
-update-alternatives --install /usr/bin/python python /usr/bin/python3.5 2
-pip install .
+pip3 install .
 popd || exit
 
 #=================================================
