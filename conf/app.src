@@ -1,0 +1,7 @@
+SOURCE_URL=https://github.com/sphinx-doc/sphinx/archive/v2.1.2.tar.gz
+SOURCE_SUM=31499776ae690a54b2a54734b3ddd174c44891ae8f4fedce5657cd1da15993d9332bf9b9ef7927b261235427288192ffa83aa48dec31b060ed6a7dfe9970fdde
+SOURCE_SUM_PRG=sha512sum
+SOURCE_FORMAT=tar.gz
+SOURCE_IN_SUBDIR=true
+SOURCE_EXTRACT=true
+SOURCE_FILENAME=sphinx.tar.gz
