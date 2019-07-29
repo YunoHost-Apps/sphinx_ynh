@@ -101,6 +101,7 @@ ynh_setup_source "$final_path"
 
 pushd $final_path || exit
 pip3 install .
+make builder
 popd || exit
 
 #=================================================
