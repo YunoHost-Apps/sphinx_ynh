@@ -17,12 +17,12 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'test'
-copyright = '2019, test'
-author = 'test'
+project = '__NAME__'
+copyright = '2019, __NAME__'
+author = '__AUTHOR__'
 
 # The full version, including alpha/beta/rc tags
-release = '1.0'
+release = '2.1.2'
 
 
 # -- General configuration ---------------------------------------------------
@@ -41,7 +41,7 @@ templates_path = ['_templates']
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = 'fr'
+language = '__LANG__'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.

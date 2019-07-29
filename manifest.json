@@ -32,7 +32,6 @@
                 },
                 "example": "example.com"
             },
-
             {
                 "name": "path",
                 "type": "path",
@@ -43,7 +42,6 @@
                 "example": "/",
                 "default": "/"
             },
-            
             {
                 "name": "is_public",
                 "type": "boolean",
@@ -52,6 +50,34 @@
                     "fr": "Est-ce un site public ?"
                 },
                 "default": "true"
+            },
+            {
+                "name": "ad_name",
+                "type": "ad_name",
+                "ask": {
+                    "en": "Enter your project name ?",
+                    "fr": "Entrer votre nom de projet ?",
+                },
+                "example": "my project"
+            },
+            {
+                "name": "ad_author",
+                "type": "ad_author",
+                "ask": {
+                    "en": "Is it a public site ?",
+                    "fr": "Est-ce un site public ?"
+                },
+                "example": "liberodark"
+            },
+            {
+                "name": "ad_lang",
+                "type": "ad_lang",
+                "ask": {
+                    "en": "Is it a public site ?",
+                    "fr": "Est-ce un site public ?"
+                },
+                "choices": ["fr", "es", "en"],
+                "default": "en"
             }
         ]
     }
