@@ -56,7 +56,7 @@
                 "type": "ad_name",
                 "ask": {
                     "en": "Enter your project name ?",
-                    "fr": "Entrer votre nom de projet ?",
+                    "fr": "Entrer votre nom de projet ?"
                 },
                 "example": "my project"
             },
