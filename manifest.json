@@ -6,7 +6,7 @@
         "en": "Tool that makes it easy to create documentation",
         "fr": "Outil qui facilite la création de documentation"
     },
-    "version": "2.1.2~ynh1",
+    "version": "4.4.0~ynh1",
     "url": "https://github.com/sphinx-doc/sphinx",
     "license": "free",
     "maintainer": {
@@ -14,31 +14,20 @@
         "email": "liberodark@gmail.com"
     },
     "requirements": {
-        "yunohost": ">= 4.0.0"
+        "yunohost": ">= 4.3.0"
     },
     "multi_instance": false,
     "services": [
-        "nginx",
-        "php7.0-fpm",
-        "mysql"
+        "nginx"
     ],
     "arguments": {
         "install": [{
                 "name": "domain",
-                "type": "domain",
-                "ask": {
-                    "en": "Choose a domain name for Sphinx",
-                    "fr": "Choisissez un nom de domaine pour Sphinx"
-                },
-                "example": "example.com"
+                "type": "domain"
             },
             {
                 "name": "path",
                 "type": "path",
-                "ask": {
-                    "en": "Choose a path for Sphinx /Sphinx is accepted",
-                    "fr": "Choisissez un chemin pour Sphinx /Sphinx est accepté"
-                },
                 "example": "/",
                 "default": "/"
             },
@@ -52,8 +41,8 @@
                 "default": true
             },
             {
-                "name": "ad_name",
-                "type": "ad_name",
+                "name": "name",
+                "type": "string",
                 "ask": {
                     "en": "Enter your project name?",
                     "fr": "Entrer votre nom de projet ?"
@@ -61,8 +50,8 @@
                 "example": "my project"
             },
             {
-                "name": "ad_author",
-                "type": "ad_author",
+                "name": "author",
+                "type": "string",
                 "ask": {
                     "en": "Is it a public site?",
                     "fr": "Est-ce un site public ?"
@@ -70,11 +59,11 @@
                 "example": "liberodark"
             },
             {
-                "name": "ad_lang",
-                "type": "ad_lang",
+                "name": "language",
+                "type": "string",
                 "ask": {
-                    "en": "Is it a public site?",
-                    "fr": "Est-ce un site public ?"
+                    "en": "Choose the application language",
+                    "fr": "Choisissez la langue de l'application"
                 },
                 "choices": ["fr", "es", "en"],
                 "default": "en"
