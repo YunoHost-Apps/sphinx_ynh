@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = '__NAME__'
-copyright = '2019, __NAME__'
+copyright = '2022, __NAME__'
 author = '__AUTHOR__'
 
 # The full version, including alpha/beta/rc tags
