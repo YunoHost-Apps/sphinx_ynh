@@ -9,12 +9,12 @@
     "version": "4.4.0~ynh1",
     "url": "https://www.sphinx-doc.org",
     "upstream": {
-        "license": "free",
+        "license": "BSD",
         "website": "https://www.sphinx-doc.org",
         "admindoc": "https://www.sphinx-doc.org/en/master/contents.html",
         "code": "https://github.com/sphinx-doc/sphinx"
     },
-    "license": "free",
+    "license": "BSD",
     "maintainer": {
         "name": "liberodark",
         "email": "liberodark@gmail.com"
